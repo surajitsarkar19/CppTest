@@ -1,0 +1,50 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "CMake Debug",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}/build"
+            },
+            "command": "cmake",
+            "args": [
+                "-G",
+                "'NMake Makefiles'",
+                "-DCMAKE_BUILD_TYPE=Debug",
+                ".."
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "CMake Release",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}/build"
+            },
+            "command": "cmake",
+            "args": [
+                "-G",
+                "'NMake Makefiles'",
+                "-DCMAKE_BUILD_TYPE=Release",
+                ".."
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Make",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}/build"
+            },
+            "command": "nmake",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        }
+    ]
+}
