@@ -11,7 +11,7 @@ using namespace std;
 
 vector<std::string> split(const std::string& s, char delimiter)
 {
-   vector<std::string> tokenss;
+   vector<std::string> tokens;
    string token;
    istringstream tokenStream(s);
    while (std::getline(tokenStream, token, delimiter))

@@ -9,8 +9,16 @@ set(EXECUTABLE_OUTPUT_PATH ./${CMAKE_BUILD_TYPE})
 
 project(MyTestProject)
 
+# add extra include directories
+include_directories(include)
+
+
+# add extra lib directories
+#link_directories(/usr/local/lib)
+
+# add source files
 set (
-    SOURCES src/vector.cpp
+    SOURCES src/templateTest.cpp
 )
 
 # or use MATCHES to see if actual system name 
@@ -22,3 +30,6 @@ elseif(${CMAKE_SYSTEM_NAME} MATCHES Windows)
 endif()
 
 add_executable (${PROJECT_NAME} ${SOURCES})
+
+# specify the dependency on an extra library
+#target_link_libraries(hello_clion check.a)

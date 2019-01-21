@@ -15,12 +15,12 @@ inline T square(T x)
 template <>
 string square<string>(string ss)
 {
-   return (ss+ss);
+   return (ss + ss);
 };
 
 void templateSpecialization()
 {
-    cout<<"square(4) :"<<square(4)<<endl;
-    string str = "Bla";
-    cout<<"square('Bla') :"<<square(str)<<endl;
+   cout << "square(4) :" << square(4) << endl;
+   string str = "Bla";
+   cout << "square('Bla') :" << square(str) << endl;
 }
