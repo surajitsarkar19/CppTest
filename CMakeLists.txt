@@ -18,7 +18,7 @@ include_directories(include)
 
 # add source files
 set (
-    SOURCES src/templateTest.cpp
+    SOURCES src/2dArray.cpp
 )
 
 # or use MATCHES to see if actual system name 
